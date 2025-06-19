@@ -105,6 +105,7 @@ fun TipCalculatorScreen() {
 }
 
 fun calculateTip(amount: Double, tipPercent: Int, roundUp: Boolean): Double {
+    //if (amount < 0) return 0.0 // can be modified??
     var tip = amount * tipPercent / 100
     if (roundUp) {
         tip = kotlin.math.ceil(tip)
